@@ -18,16 +18,16 @@ function AddTodo({onNewItem}){
       setTodoName("");
     }
     return (
-      <div class="row my-row">
-      <div class="col-6">
+      <div className="row my-row">
+      <div className="col-6">
       <input type="text" placeholder="Enter to-do Here" 
       value={todoName} onChange={handleNameChange}></input>
       </div>
-      <div class="col-4">
+      <div className="col-4">
       <input type="date" value={dueDate} onChange={handleDateChange}></input>
       </div>
-      <div class="col-2">
-      <button type="button" class="btn btn-success my-button" onClick={handleAddButton}>Add</button>
+      <div className="col-2">
+      <button type="button" className="btn btn-success my-button" onClick={handleAddButton}>Add</button>
       </div>
     </div>
     )
