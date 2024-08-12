@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './routes/App.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import Bag from './routes/Bag.jsx'
