@@ -15,9 +15,9 @@ export const Auth = ( {setIsAuth} ) => {
   };
 
   return (
-    <div className="auth">
+    <center className="auth">
       <p>Sign in With Google To Continue</p>
-      <button onClick={signInWithGoogle}>Sign in with Google</button>
-    </div>
+      <button class="btn btn-primary" onClick={signInWithGoogle}>Sign in with Google</button>
+    </center>
   );
 };

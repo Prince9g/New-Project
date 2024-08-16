@@ -45,12 +45,12 @@ export const Chat = ({ room }) => {
   return (
     <div className="chat-app">
       <div className="header">
-        <h1>Welcome To: {room.toUpperCase()}</h1>
+        <h1>You're Welcome in: {room.toUpperCase()}</h1>
       </div>
       <div className="messages">
         {messages.map((message) => (
           <div className="message" key={message.id}>
-            <span classNam="user">{message.user + " : "}</span>
+            <span className="user">{message.user + " : "}</span>
             {message.text}
             {/* you can make here time stamp */}
           </div>
@@ -58,14 +58,14 @@ export const Chat = ({ room }) => {
       </div>
       <form onSubmit={handleSubmit} className="new-msg">
         <input
-          className="new-msg-input"
+          className="new-msg-input form-control"
           placeholder="Type your Message Here..."
           onChange={(e) => {
             setNewMessage(e.target.value);
           }}
           value={newMessage}
         />
-        <button type="submit" className="send-btn">
+        <button type="submit" className="send-btn btn btn-success">
           Send
         </button>
       </form>
