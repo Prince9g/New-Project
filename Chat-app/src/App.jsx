@@ -27,11 +27,11 @@ function App() {
         {room ? (
           <Chat room={room}/>
         ) : (
-          <div className="room">
+          <center className="room card">
             <label style={{fontSize: "2.5rem" , fontWeight:500 , fontStyle: 'italic'}}>Enter Room Name:</label>
             <input className="form-control" ref={roomInputRef} />
-            <button className="btn btn-success " style={{padding: ".25rem 5rem .25rem 5rem", fontSize: "1.25rem", fontWeight:500, marginTop: ".5rem"}} onClick={() => setRoom(roomInputRef.current.value)}>Enter Chat</button>
-          </div>
+            <button className="btn btn-success" style={{padding: ".25rem 5rem .25rem 5rem", fontSize: "1.25rem", fontWeight:500, marginTop: ".5rem"}} onClick={() => setRoom(roomInputRef.current.value)}>Enter Chat</button>
+          </center>
         )}
 
         <SignOut setIsAuth={setIsAuth} setRoom={setRoom}/>

@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { useRef } from "react";
-function AddTodo({ onNewItem }) {
+import { TodoItemsContext } from "../store/todo-items-store";
+function AddTodo({onNewItem}) {
   // //by using states
   // const [todoName, setTodoName] = useState();
   // const [dueDate, setDueDate] = useState();
@@ -13,6 +15,7 @@ function AddTodo({ onNewItem }) {
   // };
 
   //doing it by useRef
+  const {addNewItem} = useContext(TodoItemsContext);
   const todoitemName = useRef();
   const todoitemDate = useRef();
   //handling add button
@@ -20,7 +23,7 @@ function AddTodo({ onNewItem }) {
     const todoName = todoitemName.current.value;
     const dueDate = todoitemDate.current.value;
     if(todoitemDate.current.value != '' && todoitemName.current.value != ''){
-      onNewItem(todoName, dueDate);
+      addNewItem(todoName, dueDate);
       todoitemName.current.value='';
       todoitemDate.current.value='';
     }

@@ -14,6 +14,10 @@
     align-items: center;
     justify-items: center;
     margin-top: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    
 }
 
 .sign-out{
@@ -26,11 +30,13 @@
     background-color: #B6D6CC;
 }
 .chat-app{
-    display: flex;
+    /* display: flex;
     background-color: #F1FEC6;
-    flex-direction: column;
-    /* display: inline-block; */
-    border: 2px solid black;
+    flex-direction: column; */
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
 }
 
 .new-msg{

@@ -43,7 +43,7 @@ export const Chat = ({ room }) => {
     setNewMessage("");
   };
   return (
-    <div className="chat-app">
+    <div className="chat-app card">
       <div className="header">
         <h1>You're Welcome in: {room.toUpperCase()}</h1>
       </div>
