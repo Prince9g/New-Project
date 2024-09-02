@@ -12,7 +12,7 @@ let ClockTime = () =>{
             clearInterval(intervalId);
         }
     },[])
-    return <p>This is the current time: {time.toLocaleDateString()}-{" "}{time.toLocaleTimeString()}</p>;
+    return <p>This is the time: {time.toLocaleDateString()}-{" "}{time.toLocaleTimeString()}</p>;
 };
  
 export default ClockTime;
